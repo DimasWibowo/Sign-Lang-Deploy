@@ -1,3 +1,5 @@
+from streamlit_webrtc import webrtc_streamer, RTCConfiguration
+from streamlit_webrtc import webrtc_streamer, VideoProcessorBase, ClientSettings
 import streamlit as st
 from pytube import YouTube
 import hydralit_components as hc
@@ -13,8 +15,7 @@ import warnings
 warnings.filterwarnings('ignore')
 import pygame
 from gtts import gTTS
-from streamlit_webrtc import webrtc_streamer, RTCConfiguration
-from streamlit_webrtc import webrtc_streamer, VideoProcessorBase, ClientSettings
+
 #--------------------------#
 
 RTC_CONFIGURATION = RTCConfiguration(
